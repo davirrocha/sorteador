@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Mukta", sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #272540;
+}
+
+main {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    h1 {
+        font-size: 40px;
+        color: #fff;
+    }
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+p {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 26px;
+}
+
+
+input {
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 23px;
+    color: #fff;
+
+    &:focus {
+
+        border-color: #D19E9A;
+    }
+}
+
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button {
+    width: 280px;
+    height: 56px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #D19E9A;
+    border: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+button:active {
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    main {
+        width: 90vw;
+    }
+
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .input {
+        font-size: 23px
+    }
+
+
+    p {
+        width: 245px;
+        font-size: 30px;
+        margin: auto;
+    }
+
+}
